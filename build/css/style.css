@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaExtrabldIt.eot");
+  src: url("../fonts/ProximaNovaExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExtrabldIt.woff") format("woff"), url("../fonts/ProximaNovaExtrabldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaLightIt.eot");
+  src: url("../fonts/ProximaNovaLightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaLightIt.woff") format("woff"), url("../fonts/ProximaNovaLightIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+:root {
+  --basic-white: #ffffff;
+  --special-grey: #eaeaea;
+  --basic-grey: #f2f2f2; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0); }
+
+.container {
+  margin: 0 auto;
+  padding: 0 5px;
+  max-width: 320px; }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding: 0 1px; } }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  font-family: inherit;
+  text-decoration: none; }
+
+.button {
+  display: inline-block;
+  padding: 0;
+  font-size: 12.45px;
+  line-height: 14.37px;
+  letter-spacing: -0.5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0; }
+  .button--primary {
+    padding: 8px 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #242be5; }
+    .button--primary:hover, .button--primary:focus {
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4); }
+    .button--primary:active {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4); }
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 14.26px;
+    line-height: 14.26px; }
+    .button--primary {
+      padding: 10px 22px; } }
+
+.page__body {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  background-color: #ffffff;
+  margin: 0; }
+
+.product-card {
+  margin: 0 40px;
+  padding: 22px 0 29px;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  border: 1px solid #d2d7db; }
+
+.product-card__title {
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  max-width: 76px;
+  margin-bottom: 14px;
+  padding-top: 21px; }
+
+.product-card__image {
+  margin: auto; }
+
+.product-card__about {
+  margin-top: 35px;
+  margin-bottom: 14px; }
+
+.product-card__brand {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.product-card__value {
+  margin-top: 5px;
+  margin-left: 0; }
+
+@media (min-width: 768px) {
+  .product-card {
+    padding: 36px 0 44px; }
+  .product-card__about {
+    margin-top: 45px;
+    margin-bottom: 15px; }
+  .product-card__brand {
+    font-size: 20px;
+    line-height: 22px; }
+  .product-card__value {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 20px; }
+  .product-card__img-wrap img {
+    width: 180px; } }
+
+@media (min-width: 992px) {
+  .product-card {
+    position: relative;
+    margin: 0;
+    padding: 36px 0 8px; }
+    .product-card:hover {
+      padding-bottom: 118px;
+      cursor: pointer; }
+      .product-card:hover .product-card__body {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 -50px 50px 0 rgba(255, 255, 255, 0.9); }
+      .product-card:hover .product-card__purchase {
+        display: block;
+        margin: 0 auto;
+        width: 100px; }
+  .product-card__img-wrap img {
+    width: auto; }
+  .product-card__purchase {
+    display: none; } }
+
+.main {
+  margin: 100px 0;
+  overflow: hidden; }
+
+.our-expert {
+  color: #ffffff; }
+
+.our-expert__wrapper {
+  margin: 0;
+  padding: 41px 20px;
+  max-height: 775px;
+  line-height: 15px;
+  background-image: url("../img/experts-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 310px; }
+  .our-expert__wrapper ul {
+    padding: 0;
+    list-style: none; }
+
+.our-expert__list {
+  margin: 0;
+  margin-top: 20px; }
+
+.our-expert__item {
+  margin-bottom: 17px;
+  padding: 17px 20px 26px 17px;
+  background-color: #242be5; }
+
+.our-expert__title {
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+.our-expert__img-wrap {
+  display: flex;
+  align-items: center; }
+  .our-expert__img-wrap img {
+    vertical-align: middle;
+    border-radius: 50%; }
+  .our-expert__img-wrap span {
+    display: block;
+    margin-left: 13px;
+    width: 110px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase; }
+
+.our-expert__description {
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 13px; }
+  .our-expert__description li:not(:last-child) {
+    margin-bottom: 15px; }
+
+.our-expert__br--tablet {
+  display: none; }
+
+.our-expert__br--desktop {
+  display: none; }
+
+@media (min-width: 768px) {
+  .our-expert__wrapper {
+    margin: 0;
+    padding: 56px 40px;
+    max-height: 643px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    background-image: url("../img/experts-tablet.jpg");
+    background-size: 758px; }
+  .our-expert__title {
+    width: 100px;
+    font-size: 30px;
+    line-height: 30px; }
+  .our-expert__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0; }
+  .our-expert__item {
+    margin-top: 31px;
+    margin-bottom: 0;
+    padding: 27px 20px 34px 27px;
+    width: 329px; }
+    .our-expert__item:last-child {
+      margin-top: -66px; }
+  .our-expert__img-wrap img {
+    width: 60px; }
+  .our-expert__img-wrap span {
+    display: block;
+    margin-left: 20px;
+    width: 140px;
+    font-size: 20px;
+    line-height: 22px; }
+  .our-expert__description {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.1px; }
+    .our-expert__description li:not(:last-child) {
+      margin-bottom: 20px; }
+  .our-expert__br--tablet {
+    display: block; } }
+
+@media (min-width: 992px) {
+  .our-expert__wrapper {
+    margin: 0;
+    padding: 76px 50px;
+    max-height: 680px;
+    line-height: 22px;
+    background-image: url("../img/experts-desktop.jpg");
+    background-size: 990px; }
+  .our-expert__title {
+    letter-spacing: -1.1px; }
+  .our-expert__item {
+    display: flex;
+    padding: 31px 34px 34px 27px;
+    width: 435px; }
+  .our-expert__img-wrap {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 158px; }
+    .our-expert__img-wrap img {
+      width: 80px; }
+    .our-expert__img-wrap span {
+      margin-top: 17px;
+      margin-left: 4px;
+      width: auto; }
+  .our-expert__description {
+    margin: 0; }
+  .our-expert__br--desktop {
+    display: block; }
+  .our-expert__br--tablet {
+    display: none; } }
+
+.recommend {
+  color: #182353; }
+
+.recommend__title {
+  margin: 40px 0 15px;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .recommend__title {
+    margin: 51px 0 20px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1px; } }
+
+@media (min-width: 992px) {
+  .recommend__title {
+    margin: 71px 0 30px; } }
+
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+    .owl-carousel .owl-stage::after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    padding: 31px 12px;
+    background-color: blue; }
+  .owl-carousel .owl-nav .owl-prev {
+    left: 0; }
+  .owl-carousel .owl-nav .owl-next {
+    right: 0; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+@media (min-width: 768px) {
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    margin-top: -80px;
+    padding: 41px 12px; } }
+
+@media (min-width: 992px) {
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    margin-top: -46px; }
+  .owl-stage-outer {
+    margin: 0 51px; }
+  .owl-item {
+    width: 340px; } }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+      This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+      calculation of the height of the owl-item that breaks page layouts
+     */ }
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease; }
+  .owl-carousel .owl-item .owl-lazy[src^=""],
+  .owl-carousel .owl-item .owl-lazy:not([src]) {
+    max-height: 0; }
+  .owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
