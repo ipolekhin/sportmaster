@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  padding: 0;
+
+  font-size: 12.45px;
+  line-height: 14.37px;
+  letter-spacing: -0.5px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  &--primary {
+    padding: 8px 22px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $basic-white;
+
+    background-color: $basic-blue;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 14.26px;
+    line-height: 14.26px;
+
+    &--primary {
+      padding: 10px 22px;
+    }
+  }
+}

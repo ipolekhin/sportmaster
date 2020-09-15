@@ -1,0 +1,30 @@
+.recommend {
+  color: $deep-blue;
+}
+
+.recommend__title {
+  margin: 40px 0 15px;
+
+  font-family: $custom-font;
+  font-size: $medium-font-size;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .recommend__title {
+    margin: 51px 0 20px;
+
+    font-size: $large-font-size;
+    line-height: 30px;
+    letter-spacing: -1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommend__title {
+    margin: 71px 0 30px;
+  }
+}
